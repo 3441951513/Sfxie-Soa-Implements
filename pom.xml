@@ -13,7 +13,7 @@
 		<module>Sfxie-Soa-Impl-Cm</module>
 		<module>Sfxie-Soa-Impl-Geo</module>
 		<module>Sfxie-Soa-Impl-App</module>
-		<module>Sfxie-Soa-Impl-Test</module>
+<!-- 		<module>Sfxie-Soa-Impl-Test</module> -->
 	</modules>
 
 	<properties>

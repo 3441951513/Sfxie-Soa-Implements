@@ -13,6 +13,12 @@
 	<name>Sfxie-Soa-Impl-Weixin</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
+		<dependency>
+			<groupId>com.sfxie.soa.interfaces</groupId>
+			<artifactId>Sfxie-Soa-intfas-Weixin</artifactId>
+			<version>${sfxie.soa.version}</version>
+			<scope>compile</scope>
+		</dependency>
 	</dependencies> 
 </project>
  
