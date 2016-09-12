@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sfxie.soa.modules.dubbo.dao.oa.mapper.CompanyMapper">
+	<select id="querySfxieCompanyList" parameterType="com.sfxie.soa.modules.dubbo.service.oa.pojo.SfxieSysCompany" resultType="com.sfxie.soa.modules.dubbo.service.oa.pojo.SfxieSysCompany">
+        select * from sfxie_sys_company c 
+    </select>
+    <select id="querySfxieCompanyPage" parameterType="com.sfxie.extension.mybatis.interceptor.Page" resultType="com.sfxie.soa.modules.dubbo.service.oa.pojo.SfxieSysCompany">
+        select * from sfxie_sys_company c where c.company_code = #{params.companyCode}
+    </select>
+</mapper>
+

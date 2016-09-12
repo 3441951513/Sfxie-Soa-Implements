@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sfxie.soa.modules.dubbo.dao.weixin.mapper.WeiXinMapper">
+	<select id="querySfxieWeixinUserList" parameterType="com.sfxie.soa.modules.dubbo.service.weixin.pojo.SfxieWeixinUser" resultType="com.sfxie.soa.modules.dubbo.service.weixin.pojo.SfxieWeixinUser">
+        select * from sfxie_weixin_user c 
+    </select>
+</mapper>
+

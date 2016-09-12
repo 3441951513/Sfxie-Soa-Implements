@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="UserMapperTemplate">
+	<select id="getSfxieSysUserinfoList" parameterType="com.sfxie.soa.modules.dubbo.service.oa.pojo.SfxieSysUserinfo" resultType="com.sfxie.soa.modules.dubbo.service.oa.pojo.SfxieSysUserinfo">
+        select * from sfxie_sys_userinfo c 
+    </select>
+</mapper>
+
