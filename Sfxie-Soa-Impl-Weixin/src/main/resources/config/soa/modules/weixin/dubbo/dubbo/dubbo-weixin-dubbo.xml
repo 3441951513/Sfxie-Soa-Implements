@@ -12,5 +12,5 @@
       ">
       
   	<!-- 要暴露的服务接口 -->  
-   	<dubbo:service interface="com.sfxie.soa.modules.dubbo.service.weixin.dubbo.SfxieWeixinService" ref="sfxieWeixinService" registry="${dubbo.service.cm.LLRService.register}"/>  	
+<!--    	<dubbo:service interface="com.sfxie.soa.modules.dubbo.service.weixin.dubbo.SfxieWeixinService" ref="sfxieWeixinService" registry="${dubbo.service.cm.LLRService.register}"/>  	 -->
 </beans>  

@@ -12,6 +12,6 @@
       ">
       
   	<!-- 要暴露的服务接口 -->  
-   	<dubbo:service interface="me.chanjar.weixin.mp.api.WxMpMenuService" ref="wxMpMenuService" registry="${dubbo.service.cm.LLRService.register}"/>  	
-	<dubbo:service interface="com.sfxie.soa.modules.dubbo.service.weixin.dubbo.MpWeixinService" ref="mpWeixinService" registry="${dubbo.service.cm.LLRService.register}"/>  	
+   	<dubbo:service interface="me.chanjar.weixin.mp.api.WxMpMenuService" ref="wxMpMenuService" registry="${dubbo.service.cm.LLRService.register}" version="1.0.0"/>  	
+<!-- 	<dubbo:service interface="com.sfxie.soa.modules.dubbo.service.weixin.dubbo.MpWeixinService" ref="mpWeixinService" registry="${dubbo.service.cm.LLRService.register}"/>  	 -->
 </beans>  

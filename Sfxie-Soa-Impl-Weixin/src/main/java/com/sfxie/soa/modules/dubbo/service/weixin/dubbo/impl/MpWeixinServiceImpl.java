@@ -11,15 +11,15 @@ import me.chanjar.weixin.mp.bean.WxMpXmlMessage;
 import me.chanjar.weixin.mp.bean.WxMpXmlOutMessage;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.sfxie.soa.dubbo.service.BaseRestfulService;
 import com.sfxie.soa.modules.dubbo.service.weixin.dubbo.MpWeixinService;
 
-@Service("mpWeixinService")
+@Service(timeout=4000,registry={"oaRegistry"},version="1.0.0")
 public class MpWeixinServiceImpl extends BaseRestfulService implements MpWeixinService  {
 	@Autowired
 	WxMpConfigStorage wxMpConfigStorage;

@@ -10,8 +10,10 @@ import me.chanjar.weixin.mp.bean.result.WxMpUser;
 import me.chanjar.weixin.mp.bean.result.WxMpUserList;
 import me.chanjar.weixin.mp.util.storage.WxMpConfigStorageUtil;
 
-import org.springframework.stereotype.Service;
+//import org.springframework.stereotype.Service;
 
+
+import com.alibaba.dubbo.config.annotation.Service;
 import com.sfxie.soa.dubbo.service.BaseRestfulService;
 import com.sfxie.soa.modules.dubbo.dao.weixin.mapper.WeiXinMapper;
 import com.sfxie.soa.modules.dubbo.service.weixin.dubbo.SfxieWeixinService;
@@ -19,7 +21,7 @@ import com.sfxie.soa.modules.dubbo.service.weixin.pojo.SfxieWeixinUser;
 import com.sfxie.utils.CollectionUtil;
 import com.sfxie.utils.ObjectUtil;
 
-@Service("sfxieWeixinService")
+@Service(timeout=4000,registry={"oaRegistry"},version="1.0.0")
 public class SfxieWeixinServiceImpl extends BaseRestfulService  implements SfxieWeixinService{
 	@Resource
 	private WeiXinMapper mapper;
